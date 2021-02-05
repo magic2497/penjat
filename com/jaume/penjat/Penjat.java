@@ -1,3 +1,4 @@
+/*
 package com.jaume.penjat;
 
 import java.awt.*;
@@ -30,3 +31,4 @@ public class Penjat {
     }
 
 }
+*/
