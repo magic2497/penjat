@@ -18,7 +18,7 @@ class TaulerTest {
 
     @Test
     void inicialitzarPartidaParaulaSecreta() {
-        assertArrayEquals(new char[]{'p', 'a', 'r', 'a', 'u', 'l', 'a'}, this.tauler.getParaulaSecreta("paraula"));
+        assertArrayEquals(new char[]{'p', 'a', 'r', 'a', 'u', 'l', 'a'}, this.tauler.getParaulaSecreta());
     }
 
     @Test
