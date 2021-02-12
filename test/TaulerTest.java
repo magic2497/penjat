@@ -31,7 +31,6 @@ class TaulerTest {
                 assertEquals("Lletra incorrecte",this.tauler.verificar("ll"));
     }
 
-/*
     @Test
     void verificarEntradaCorrecteEncertat() {
         this.tauler.verificar("a");
@@ -48,7 +47,7 @@ class TaulerTest {
     void imprimirCapEncert() {
         assertEquals("_______", this.tauler.imprimir());
     }
-
+/*
     @Test
     void imprimirAmbLletres() {
         this.tauler.verificar("a");
