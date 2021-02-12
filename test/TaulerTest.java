@@ -47,7 +47,7 @@ class TaulerTest {
     void imprimirCapEncert() {
         assertEquals("_______", this.tauler.imprimir());
     }
-/*
+
     @Test
     void imprimirAmbLletres() {
         this.tauler.verificar("a");
@@ -65,11 +65,11 @@ class TaulerTest {
     }
 
 
-
     @Test
     void imprimirVidesPlural() {
         assertEquals("Et queden 4 vides de 4", this.tauler.imprimirVides());
     }
+
 
     @Test
     void imprimirVidesSingular() {
@@ -98,5 +98,5 @@ class TaulerTest {
     @Test
     void hasGuanyatFalse() {
         assertFalse(this.tauler.hasGuanyat());
-    }*/
+    }
 }

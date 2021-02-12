@@ -1,5 +1,7 @@
 package com.jaume.penjat;
 
+import java.util.Arrays;
+
 public class Tauler {
     private char[] paraulaSecreta;
     private int intents;
@@ -38,6 +40,7 @@ public class Tauler {
         String[] cadena2 = new String[cadena.length];
 
 
+
         setParaulaSecreta(cadena);
         setIntents(intents);
         setPalabraEndevinada(cadena2);
@@ -62,12 +65,49 @@ public class Tauler {
             letra = "Lletra incorrecte";
 
         }
-
-
         return letra;
     }
-    public void imprimir(){
 
+    public String imprimir() {
+        String paraula = "";
+        for (int i = 0; i < palabraEndevinada.length; i++) {
+
+            if (palabraEndevinada[i] == null) {
+                paraula = paraula + "_";
+            } else {
+                paraula = paraula + palabraEndevinada[i];
+            }
+        }
+
+
+        return paraula;
+    }
+
+    public String imprimirVides() {
+        int intents = getIntents();
+       String vides = "";
+        if (intents > 1) {
+            vides = "Et queden" + " " + getIntents() + " " + "vides de 4";
+        } else {
+             vides = "Et queda" + " " + getIntents() + " " + "vida de 4";
+        }
+
+
+        return vides;
+    }
+
+    public boolean hasGuanyat(){
+        boolean estatPartida = false;
+        String palabraSecreta = new String(this.paraulaSecreta);
+        String palabraEndevinada = String.join("",this.palabraEndevinada);
+
+        int intents = getIntents();
+
+        if (intents >= 1 && palabraSecreta.equals(palabraEndevinada) ) {
+            estatPartida = true;
+        }
+
+        return estatPartida;
     }
 }
 
